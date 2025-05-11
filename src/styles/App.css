@@ -1,0 +1,151 @@
+/* Main Styles for LifeLink React App */
+
+/* General Styles */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --info-color: #17a2b8;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 6rem 0;
+  margin-bottom: 2rem;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-section p.lead {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Authentication Forms */
+.auth-form-container {
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Dashboard cards */
+.dashboard-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Custom Divider */
+.divider-custom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.25rem 0 1.5rem;
+}
+
+.divider-custom-line {
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  background-color: var(--primary-color);
+  border-radius: 1rem;
+  border: none;
+}
+
+.divider-custom-icon {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin: 0 1rem;
+}
+
+/* Icon Wrappers */
+.icon-wrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #e9f4ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* Footer Styles */
+footer a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 4rem 0;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-section p.lead {
+    font-size: 1.25rem;
+  }
+}
+
+/* Animation Classes */
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

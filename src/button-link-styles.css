@@ -1,0 +1,50 @@
+/* Styles for buttons that look like links */
+.btn-link {
+  text-decoration: none;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: inherit;
+  color: inherit;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+/* Nav link buttons */
+.nav-link.btn-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: inherit;
+}
+
+.nav-link.btn-link:hover,
+.nav-link.btn-link:focus {
+  text-decoration: none;
+}
+
+/* Dropdown toggle button */
+.dropdown-toggle.btn-link {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+/* Footer link buttons */
+footer .btn-link {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+footer .btn-link:hover {
+  color: white;
+}
+
+/* Make sure the home section links work properly */
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 70px; /* Adjust based on your navbar height */
+}
